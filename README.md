@@ -9,19 +9,6 @@ Custom Voices: Configured to use natural-sounding male voices for better user ex
 Voice Channel Integration: Plays the generated audio directly in a user's current voice channel.
 Free and Open-Source: Uses entirely free tools and libraries (pyttsx3), ensuring no additional costs.
 
-Project Structure 📂
-
-project/
-├── bot.py # Main entry point of the bot
-├── command/
-│ ├── **init**.py # Package initializer for commands
-│ ├── tts_command.py # Cog for the text-to-speech command
-├── utils/
-│ ├── **init**.py # Package initializer for utilities
-│ ├── tts.py # Text-to-speech logic with pyttsx3
-├── config/
-│ └── config.py # Configuration for API keys and bot settings
-├── requirements.txt # Python dependencies
 Setup Instructions ⚙️
 Clone the repository:
 
@@ -40,9 +27,8 @@ Open config/config.py and update DISCORD_TOKEN with your Discord bot token.
 Ensure you have the correct FFMPEG_PATH set if required.
 Run the bot:
 
-bash
-Copy code
 python bot.py
+
 Prerequisites ✅
 Python 3.8+: Ensure Python is installed.
 FFmpeg: Required for playing audio in Discord. Download here.
